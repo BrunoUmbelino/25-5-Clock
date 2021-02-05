@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Col, Container, Label, Row } from "reactstrap";
+import { Col, Container, Label, Row } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -159,21 +159,21 @@ class Main extends React.Component {
             </section>
             <section className="control-timer">
               <Row className="justify-content-center">
-                <Button
+                <button
                   id="start_stop"
                   className="control-timer-btn"
                   onClick={this.startStopTimer}
                 >
                   <FontAwesomeIcon icon={faPlay} />
                   <FontAwesomeIcon icon={faPause} />
-                </Button>
-                <Button
+                </button>
+                <button
                   id="reset"
                   className="control-timer-btn"
                   onClick={this.reset}
                 >
                   <FontAwesomeIcon icon={faRedo} />
-                </Button>
+                </button>
               </Row>
             </section>
           </div>
@@ -189,38 +189,38 @@ class Main extends React.Component {
             <Row>
               <Col>
                 <Row className="align-items-center justify-content-center">
-                  <Button
+                  <button
                     id="break-decrement"
                     className="config-timer-btn"
                     onClick={this.breakDecrement}
                   >
                     <FontAwesomeIcon icon={faMinus} />
-                  </Button>
+                  </button>
                   <div id="break-length">{this.state.breakLength}</div>
-                  <Button
+                  <button
                     id="break-increment"
                     className="config-timer-btn"
                     onClick={this.breakIncrement}
                   >
                     <FontAwesomeIcon icon={faPlus} />
-                  </Button>
+                  </button>
                 </Row>
               </Col>
               <Col>
                 <Row className="align-items-center justify-content-center">
-                  <Button
+                  <button
                     id="session-decrement"
                     onClick={this.sessionDecrement}
                   >
                     <FontAwesomeIcon icon={faMinus} />
-                  </Button>
+                  </button>
                   <div id="session-length">{this.state.sessionLength}</div>
-                  <Button
+                  <button
                     id="session-increment"
                     onClick={this.sessionIncrement}
                   >
                     <FontAwesomeIcon icon={faPlus} />
-                  </Button>
+                  </button>
                 </Row>
               </Col>
             </Row>
